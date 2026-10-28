@@ -1,0 +1,126 @@
+:root {
+    --fondo: #f4f4f4;
+    --texto: #222222;
+    --borde: #777777;
+    --principal: #164e83;
+    --blanco: #ffffff;
+    --error: #a11b1b;
+    --espacio: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: var(--espacio);
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 24px;
+    background: var(--blanco);
+    border: 1px solid #dddddd;
+}
+
+h1 {
+    font-size: 26px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.acciones {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+button {
+    min-height: 44px;
+    padding: 10px 16px;
+    background: var(--principal);
+    color: var(--blanco);
+    border: 0;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button.secundario {
+    background: var(--blanco);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+}
+
+button.eliminar {
+    background: var(--blanco);
+    color: var(--error);
+    border: 1px solid var(--error);
+}
+
+:focus-visible {
+    outline: 3px solid #a55d00;
+    outline-offset: 3px;
+}
+
+#mensaje {
+    min-height: 24px;
+    font-weight: bold;
+}
+
+#lista {
+    padding: 0;
+    list-style: none;
+}
+
+#lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+#lista li span {
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 420px) {
+    .contenedor {
+        padding: 16px;
+    }
+
+    #lista li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
