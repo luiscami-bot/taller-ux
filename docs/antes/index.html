@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Notas</title>
+
+    <style>
+        body {
+            font-family: Times New Roman;
+            color: #aaa;
+            text-align: center;
+        }
+
+        textarea {
+            border: 1px solid #eee;
+        }
+
+        button {
+            font-size: 10px;
+        }
+
+        *:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h4>NOTAS</h4>
+
+    <textarea id="nota" placeholder="Nota"></textarea>
+
+    <button onclick="agregar()">ok</button>
+
+    <ul id="lista"></ul>
+
+    <script>
+        function agregar() {
+            const li = document.createElement("li");
+
+            li.textContent = document.getElementById("nota").value;
+
+            const boton = document.createElement("button");
+
+            boton.textContent = "X";
+
+            boton.onclick = () => li.remove();
+
+            li.appendChild(boton);
+
+            document.getElementById("lista").appendChild(li);
+
+            document.getElementById("nota").value = "";
+        }
+    </script>
+
+</body>
+</html>
