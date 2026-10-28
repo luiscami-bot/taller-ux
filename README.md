@@ -16,3 +16,6 @@ Pagina publicada: https://luiscami-bot.github.io/taller-ux/
 | Ley de Fitts | Boton principal grande y separado de Limpiar |
 | Ley de Hick | Talleres agrupados por categoria |
 | Accesibilidad | Labels, texto alternativo, contraste y foco visible |
+
+## Tarea 
+Pagina publicada: https://luiscami-bot.github.io/taller-ux/docs/
