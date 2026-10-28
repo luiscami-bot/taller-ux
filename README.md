@@ -4,7 +4,7 @@ Formulario de inscripcion redisenado con principios de UX/UI
  
 Formulario de inscripcion redisenado aplicando principios de UX/UI.
  
-Pagina publicada: https://github.com/luiscami-bot/taller-ux
+Pagina publicada: https://luiscami-bot.github.io/taller-ux/
  
 ## Cambios aplicados
  
