@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de notas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <h1>Aplicación de notas</h1>
+
+        <p>Escribe una nota y agrégala a la lista.</p>
+
+        <form id="formulario">
+
+            <label for="nota">Nueva nota</label>
+
+            <textarea id="nota" rows="3" maxlength="250" required></textarea>
+
+            <div class="acciones">
+                <button type="submit">Agregar nota</button>
+                <button type="reset" class="secundario">Limpiar</button>
+            </div>
+
+        </form>
+
+        <p id="mensaje" role="status" aria-live="polite"></p>
+
+        <section aria-labelledby="titulo-notas">
+
+            <h2 id="titulo-notas">Mis notas</h2>
+
+            <ul id="lista"></ul>
+
+            <p id="sin-notas">No hay notas registradas.</p>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
